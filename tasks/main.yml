@@ -1,0 +1,25 @@
+---
+
+- name: install Drupal dependencies
+  apt:
+    pkg: "{{ item }}"
+    state: present
+  with_items:
+    - nodejs
+    - npm
+
+- name: install Gulp via npm
+  npm:
+    name: gulp
+    state: present
+    global: yes
+    production: yes
+
+- name: create cronjob to update Gulp regularely
+  cron:
+    name: Gulp update via npm
+    minute: 50
+    hour: 4
+    user: root
+    job: "npm update -g gulp"
+    cron_file: gulp-update
