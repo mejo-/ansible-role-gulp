@@ -1,6 +1,6 @@
 # Ansible role to install Gulp on a webserver
 
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-gulp-blue.svg)](https://galaxy.ansible.com/mejo-/gulp/)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-gulp-blue.svg)](https://galaxy.ansible.com/mejo-/gulp/) [![Build Status](https://travis-ci.org/mejo-/ansible-role-gulp.svg?branch=master)](https://travis-ci.org/mejo-/ansible-role-gulp)
 
 A very simple role to install Node.js gulp globally.
 
